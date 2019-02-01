@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*
+Theme Name: SoftSalmon
+Theme URI: http://127.0.0.1/SoftSalmon
+Author: Adrien, Younes, Lucas
+Author URI: https://accesscodeschool.fr/
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: twentynineteen
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Twenty Nineteen is based on Underscores https://underscores.me/, (C) 2012-2018 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+// fonts
+@font-face {
+  font-family: 'roboto';
+  src:url('fonts/roboto/Roboto-Regular.ttf');
+  // src:url('fonts/roboto/Roboto-Condensed.ttf');
+}
+// fonts
+@font-face {
+  font-family: 'muli';
+  src:url('fonts/muli/Muli-Regular.ttf');
+}
+
+// file:///home/www/ACCESS_CODE/wordpress/wordpress/wp-content/themes/SoftSalmon/fonts/muli/Muli-Regular.ttf
+// file:///home/www/ACCESS_CODE/wordpress/wordpress/wp-content/themes/SoftSalmon/fonts/roboto/Roboto-Regular.ttf
+
+
+// gris
+$color-darker:#343A40;
+// beige
+$color-lighter:#fff4e3;
+// bleu diesel
+$color-medium:#488b8f;
+
+//defaut bloc padding
+$defpadding:1em;
+
+
+
+body {
+  background-color:$color-darker;
+  color:$color-lighter;
+  font-family: 'roboto';
+  a {
+    color:$color-medium;
+  }
+
+  header {
+    background-size:cover;
+    background-position:center center;
+    padding:$defpadding;
+    min-height:20vh;
+    h1{
+      padding:1em;
+      font-family: 'roboto' !important;
+      background-color: $color-darker+aa;
+    }
+
+  }
+
+  nav {
+    padding:$defpadding;
+    background-color:$color-darker;
+    color:$color-lighter;
+  }
+
+  main {
+
+    padding:$defpadding;
+    background-color:$color-lighter;
+    color:$color-darker;
+
+    // section:first-child {
+    // }
+    article.article {
+      font-family: 'muli';
+      margin:.5em;
+      background-color:$color-lighter;
+      border-left:2px solid $color-medium;
+      color:$color-darker;
+      .texte{
+        padding : .5em;
+      }
+      .meta{
+        a {
+          color:$color-lighter;
+          &:hover{
+            color:$color-lighter;
+          }
+        }
+        padding : .5em;
+        color:$color-lighter;
+        background-color:$color-medium;
+      }
+    }
+
+    aside.list-comm {
+
+      div {
+        margin:.5em;
+        padding:0em;
+        padding-left:3em;
+        background-color:$color-lighter;
+        color:$color-darker;
+
+        @media all and (max-width: 800px){
+          padding:.5em !important;
+          padding-left:1em !important;
+        }
+
+        img{
+          display: inline-block;
+          margin:.5em;
+          @media all and (max-width: 400px){
+            display:none !important;
+          }
+        }
+
+        .texte {
+          padding-left:0;
+          font-family: 'muli';
+          vertical-align: middle;
+          display:inline-block;
+
+          .meta{
+            a {
+              color:$color-lighter;
+              &:hover{
+                color:$color-lighter;
+              }
+            }
+            margin:0;
+            margin-top:.15em;
+            padding : .15em;
+            color:$color-medium;
+            // background-color:$color-medium;
+          }
+        }
+      }
+    }
+
+    div.comment-respond {
+      padding-left:3em;
+      color:$color-darker;
+      font-size:1em;
+
+      input, textarea {
+        background-color:$color-lighter;
+        color:$color-darker;
+        border:1px solid $color-darker;
+        display: block;
+        &:focus {
+          border:1px solid $color-medium;
+        }
+      }
+    }
+
+
+  }
+
+  footer {
+    padding:$defpadding;
+    background-color:$color-darker;
+    color:$color-lighter;
+  }
+
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/*
+Theme Name: SoftSalmon
+Theme URI: http://127.0.0.1/SoftSalmon
+Author: Adrien, Younes, Lucas
+Author URI: https://accesscodeschool.fr/
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: twentynineteen
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Twenty Nineteen is based on Underscores https://underscores.me/, (C) 2012-2018 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+@font-face {
+  font-family: 'roboto';
+  src: url("fonts/roboto/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: 'muli';
+  src: url("fonts/muli/Muli-Regular.ttf"); }
+body {
+  background-color: #343A40;
+  color: #fff4e3;
+  font-family: 'roboto'; }
+  body a {
+    color: #488b8f; }
+  body header {
+    background-size: cover;
+    background-position: center center;
+    padding: 1em;
+    min-height: 20vh; }
+    body header h1 {
+      padding: 1em;
+      font-family: 'roboto' !important;
+      background-color: #343A40aa; }
+  body nav {
+    padding: 1em;
+    background-color: #343A40;
+    color: #fff4e3; }
+  body main {
+    padding: 1em;
+    background-color: #fff4e3;
+    color: #343A40; }
+    body main article.article {
+      font-family: 'muli';
+      margin: .5em;
+      background-color: #fff4e3;
+      border-left: 2px solid #488b8f;
+      color: #343A40; }
+      body main article.article .texte {
+        padding: .5em; }
+      body main article.article .meta {
+        padding: .5em;
+        color: #fff4e3;
+        background-color: #488b8f; }
+        body main article.article .meta a {
+          color: #fff4e3; }
+          body main article.article .meta a:hover {
+            color: #fff4e3; }
+    body main aside.list-comm div {
+      margin: .5em;
+      padding: 0em;
+      padding-left: 3em;
+      background-color: #fff4e3;
+      color: #343A40; }
+      @media all and (max-width: 800px) {
+        body main aside.list-comm div {
+          padding: .5em !important;
+          padding-left: 1em !important; } }
+      body main aside.list-comm div img {
+        display: inline-block;
+        margin: .5em; }
+        @media all and (max-width: 400px) {
+          body main aside.list-comm div img {
+            display: none !important; } }
+      body main aside.list-comm div .texte {
+        padding-left: 0;
+        font-family: 'muli';
+        vertical-align: middle;
+        display: inline-block; }
+        body main aside.list-comm div .texte .meta {
+          margin: 0;
+          margin-top: .15em;
+          padding: .15em;
+          color: #488b8f; }
+          body main aside.list-comm div .texte .meta a {
+            color: #fff4e3; }
+            body main aside.list-comm div .texte .meta a:hover {
+              color: #fff4e3; }
+    body main div.comment-respond {
+      padding-left: 3em;
+      color: #343A40;
+      font-size: 1em; }
+      body main div.comment-respond input, body main div.comment-respond textarea {
+        background-color: #fff4e3;
+        color: #343A40;
+        border: 1px solid #343A40;
+        display: block; }
+        body main div.comment-respond input:focus, body main div.comment-respond textarea:focus {
+          border: 1px solid #488b8f; }
+  body footer {
+    padding: 1em;
+    background-color: #343A40;
+    color: #fff4e3; }
+
+/*# sourceMappingURL=style.css.map */
