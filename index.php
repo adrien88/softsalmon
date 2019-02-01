@@ -49,14 +49,13 @@
           <?php
              if (
                is_user_logged_in()
-               // && $author_obj->ID ==
+               && $author_obj->ID == get_current_user_id()
               ) {
           ?>
           | <a href="<?php echo get_edit_post_link( $comment->comment_post_ID, $context ); ?>">
-                Editer
-              </a>
-          <?php
-              // echo '<pre>'.print_r(,1).'</pre>';
+              Editer
+            </a>
+            <?php
             }
           ?>
       </div>
@@ -81,13 +80,18 @@
 
                   <div class="texte">
                     <?php
-                    echo $comment ->comment_content;
+                      echo $comment ->comment_content;
                     ?>
 
                     <div class="meta">
                       Author : <?php echo $comment ->comment_author;  ?>
                       | Date : <?php echo $comment->comment_date;  ?>
-
+                      | <a href="">
+                          Editer
+                        </a>
+                      | <a href="">
+                          Supprimer
+                        </a>
                     </div>
                   </div>
                 </div>

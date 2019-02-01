@@ -37,7 +37,7 @@ body {
     background-size: cover;
     background-position: center center;
     padding: 1em;
-    min-height: 20vh; }
+    min-height: 50vh; }
     body header h1 {
       padding: 1em;
       font-family: 'roboto' !important;
@@ -70,7 +70,6 @@ body {
       margin: .5em;
       padding: 0em;
       padding-left: 3em;
-      background-color: #fff4e3;
       color: #343A40; }
       @media all and (max-width: 800px) {
         body main aside.list-comm div {
@@ -86,16 +85,18 @@ body {
         padding-left: 0;
         font-family: 'muli';
         vertical-align: middle;
-        display: inline-block; }
+        display: inline-block;
+        background-color: transparent; }
         body main aside.list-comm div .texte .meta {
           margin: 0;
           margin-top: .15em;
           padding: .15em;
-          color: #488b8f; }
+          color: #488b8f;
+          background-color: transparent; }
           body main aside.list-comm div .texte .meta a {
-            color: #fff4e3; }
+            color: #343A40; }
             body main aside.list-comm div .texte .meta a:hover {
-              color: #fff4e3; }
+              color: #488b8f; }
     body main div.comment-respond {
       padding-left: 3em;
       color: #343A40;
